@@ -1499,7 +1499,7 @@ header .mega-menu .links li a i {
   border-bottom: 1px solid #d8d8d8;
 }
 .discount .form .content form input[value="Send"] {
-  width: calc(100% - 10px);
+  width: calc(100% - 35%);
   background: var(--main-color);
   color: white;
   font-family: "Font Awesome 6 Brands";
