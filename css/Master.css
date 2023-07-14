@@ -43,7 +43,7 @@ ul {
 /* Start Variables */
 :root {
   --main-color: #19c8fa;
-  --alt-color: #487d8b;
+  --alt-color: #1787e0;
   --transparent-color: rgb(15 116 143 / 70%);
   --section-padding: 100px;
   --section-background: #ececec;
@@ -1379,10 +1379,6 @@ header .mega-menu .links li a i {
 .stats .box:hover::after {
   height: 100%;
 }
-.stats .box i {
-}
-.stats .box .number {
-}
 .stats .box .text {
   color: var(--main-color);
   font-size: 30px;
@@ -1505,9 +1501,105 @@ header .mega-menu .links li a i {
   font-family: "Font Awesome 6 Brands";
   letter-spacing: 3px;
   padding: 15px;
+  margin: 0 0 20px;
 }
-
 /* End discount */
+/* Start Footer */
+footer{
+  background-color: #000000;
+  color: white;
+  font-family: math;
+  letter-spacing: 1px;
+  padding: var(--padding-top) 0 0 ;
+}
+footer .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
+}
+footer .box h3{
+  font-size: 35px;
+  margin: 0 0 45px;
+}
+footer .box .social{
+  display: flex;
+  gap: 5px;
+  margin: 0 0 45px;
+}
+footer .box .social li {}
+footer .box .social li a{
+  padding: 15px;
+  color: white;
+  background-color: #313131;
+  transition: var(--main-transition);
+}
+footer .box .social li a.facebook:hover{
+  background-color: #1877f2;
+}
+footer .box .social li a.twitter:hover{
+  background-color: #1da1f2;
+}
+footer .box .social li a.youtube:hover{
+  background-color: red;
+}
+footer .box .social + p{
+  line-height: 1.5;
+}
+footer .box .links li{
+      padding: 0px 0 10px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 15px;
+}
+footer .box .links li a{
+  position: relative;
+  color: #b9b9b9;
+  transition: var(--main-transition);
+}
+footer .box .links li:hover a{
+  padding-left: 5px;
+  color: white;
+}
+footer .box .links li a::before{
+  font-family: "Font Awesome 5 Free";
+  content: "\F101";
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--main-color);
+}
+footer .box .line{
+  display: flex;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+footer .box .line i{
+  color: var(--main-color);
+  font-size: 30px;
+}
+footer .box .line .info{
+  color: #ddd;
+  font-family: 'Font Awesome 5 Brands';
+  font-size: 11px;
+  line-height: 2;
+}
+footer .box .line .info span{}
+footer .footer-gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+  gap: 10px;
+}
+footer .footer-gallery img{
+  max-width: 100%;
+}
+footer > p{
+  margin: 70px auto 0;
+  height: 75px;
+  border-top: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+/* End Footer */
 /* Start keyframes */
 @keyframes bounce {
   0%,
